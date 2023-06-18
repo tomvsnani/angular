@@ -1,0 +1,60 @@
+<section class="card-container">
+
+    <div class="carddiv">
+        <img class="card" [src]="cardUrl">
+        <div class="cardwrappercontent">
+
+
+            <h3> {{cardTitle}}</h3>
+
+            <div>
+
+                <span class="material-symbols-outlined"  (click)="favClicked.emit()">
+                    favorite
+                    </span>
+    
+               
+    
+                <span class="material-symbols-outlined" (click)="likeClicked.emit()">
+                    visibility
+                    </span>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="metacontainer">
+
+        <div class="sectionOneContainer">
+
+            <img class="cardAuthorLogoUrl" [src]="cardAuthorLogoUrl" alt="">
+
+            <h4 class="authorName"> {{cardAuthorName}}</h4>
+
+            <h4 class="cardLevelType"> {{cardLevel}}</h4>
+
+        </div>
+
+        <div class="sectionTwoContainer">
+
+            <span class="material-symbols-outlined">
+                favorite
+                </span>
+
+            <h6 class="cardFavouritesCount">{{cardFavCount}}</h6>
+
+            <span class="material-symbols-outlined">
+                visibility
+                </span>
+
+            <h6 class="cardLikesCount">{{cardLikeCount}}</h6>
+
+        </div>
+
+
+    </div>
+</section>

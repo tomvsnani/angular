@@ -1,0 +1,8 @@
+.maincontainer{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+  
+   gap: 4rem 2rem;
+    padding: 2rem 5rem;
+}

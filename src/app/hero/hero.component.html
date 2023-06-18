@@ -1,0 +1,34 @@
+<section class="hero">
+    
+
+<ul>
+    <li *ngFor="let c of categoriesArray" >
+        
+        <a href="#"  
+        [ngClass]="c==selectedCategory?'a-selected':''"   
+        (click)="clicked(c)">
+            
+            {{c}}
+        </a>
+    
+    </li>
+</ul>
+
+<div class="titlediv">
+    <h1>{{heroTitle}}</h1>
+    <h4>{{heroSubTitle}}</h4>
+</div>
+
+<div class="searchdiv">
+    <input type="text" placeholder={{searchPlaceHolder}}  [(ngModel)]="input"   (input)="inputChange.emit(input)">
+</div>
+
+
+
+
+
+</section>
+
+
+
+

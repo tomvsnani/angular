@@ -1,0 +1,12 @@
+<div class="maincontainer">
+
+
+
+    <div class="cardItem"  *ngFor="let c of filteredArray ;"  [routerLink]="['/shots',c[c.length-1]]" [queryParams]="{authorname:c[2],title:c[0],cardurl:c[6]}">
+
+        <app-maincontentcards [cardTitle]="c[0]"  [cardAuthorLogoUrl]="c[1]"  
+          [cardAuthorName]="c[2]"   [cardLevel]="c[3]"   [cardLikeCount]="c[4]" [cardFavCount]="c[5]" [cardUrl]="c[6]" (favClicked)="favClicked(c[c.length-1])"></app-maincontentcards>
+
+    </div>
+
+</div>
